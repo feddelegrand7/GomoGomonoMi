@@ -13,3 +13,5 @@ Imports:
     htmltools,
     glue
 RoxygenNote: 7.1.0
+URL: https://github.com/feddelegrand7/coconut
+BugReports: https://github.com/feddelegrand7/coconut/issues
