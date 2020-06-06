@@ -1,0 +1,123 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# coconut
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+
+The coconut packages allows you to animate text in Rmd documents (xaringan slides included) and Shiny apps using the [Animate.css](https://animate.style/) library. 
+
+
+## Installation
+
+You can install the development version of coconut from Github with:
+
+
+```{r, eval=FALSE}
+
+install.packages("remotes")
+
+remotes::install_github("feddelegrand7/coconut")
+
+```
+
+## How to use it ? 
+
+Put the `use_coco()` function at the beginning of your document or application: 
+
+```{r}
+
+library(coconut)
+
+use_coco()
+
+```
+
+Then you can animate your text using the `coconut()` function. Don't hesitate to use `help("cocunut")` to check out additional arguments.
+
+> The Github README doesn't allow for animation but it should work on your RMarkdown document or Shiny app. 
+
+
+
+
+```{r}
+
+coconut(text = "What comes first: filter or select ?!!!", level = "###", animation = "bounce")
+
+
+```
+
+
+For a listing of all the available animations provided by the __Animate.css__ library, use the following function: 
+
+
+```{r}
+
+available_animations()
+
+
+```
+
+
+# Example 
+
+This is an example of a Shiny app that uses `coconut`
+
+
+```{r, eval=FALSE}
+
+library(shiny)
+library(coconut)
+
+ui <- fluidPage(use_coco(), 
+                
+                
+  coconut(text = "HELLO SHINY !!!!", level = "#", animation = "backInDown", duration = "slower")
+            
+
+)
+
+server <- function(input, output) {
+
+
+}
+
+shinyApp(ui = ui, server = server)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

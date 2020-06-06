@@ -1,0 +1,15 @@
+Package: coconut
+Type: Package
+Title: Animate Text using the Animate.css Library
+Version: 0.1.0
+Author: Mohamed El Fodil Ihaddaden
+Maintainer: Mohamed El Fodil Ihaddaden <ihaddaden.fodeil@gmail.com>
+Description: Allows the user to animate text within Rmd documents and Shiny apps. 
+    The animations are activated using the Animate.css library.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    htmltools,
+    glue
+RoxygenNote: 7.1.0
