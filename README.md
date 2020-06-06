@@ -7,8 +7,9 @@
 
 <!-- badges: end -->
 
-The coconut packages allows you to animate text in Rmd documents and
-Shiny apps using the [Animate.css](https://animate.style/) library.
+The coconut packages allows you to animate text in Rmd documents
+(xaringan slides included) and Shiny apps using the
+[Animate.css](https://animate.style/) library.
 
 ## Installation
 
@@ -23,8 +24,8 @@ remotes::install_github("feddelegrand7/coconut")
 
 ## How to use it ?
 
-Put the `use_coco()` function at the beginning of your document or
-application:
+Put the `use_coco()` function at the beginning of your Rmd document
+(works also with xaringan slides) or Shiny application (at the UI):
 
 ``` r
 
@@ -135,4 +136,29 @@ available_animations()
 #> 
 #> $sliding_exits
 #> [1] "slideOutDown"  "slideOutLeft"  "slideOutRight" "slideOutUp"
+```
+
+# Example
+
+This is an example of a Shiny app that uses `coconut`
+
+``` r
+
+library(shiny)
+library(coconut)
+
+ui <- fluidPage(use_coco(), 
+                
+                
+  coconut(text = "HELLO SHINY !!!!", level = "#", animation = "backInDown", duration = "slower")
+            
+
+)
+
+server <- function(input, output) {
+
+
+}
+
+shinyApp(ui = ui, server = server)
 ```

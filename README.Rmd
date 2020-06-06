@@ -37,7 +37,7 @@ remotes::install_github("feddelegrand7/coconut")
 
 ## How to use it ? 
 
-Put the `use_coco()` function at the beginning of your document or application: 
+Put the `use_coco()` function at the beginning of your Rmd document (works also with xaringan slides) or Shiny application (at the UI): 
 
 ```{r}
 
