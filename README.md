@@ -11,6 +11,13 @@ The GomoGomonoMi packages allows you to animate text in Rmd documents
 (xaringan slides included) and Shiny apps using the
 [Animate.css](https://animate.style/) library.
 
+<center>
+
+![My reaction when I discovered
+Animate.css](https://media.giphy.com/media/Uk2SWbNXWDnVe/giphy.gif)
+
+</center>
+
 ## Installation
 
 You can install the development version of `GomoGomonoMi` from Github
@@ -164,3 +171,16 @@ server <- function(input, output) {
 
 shinyApp(ui = ui, server = server)
 ```
+
+## Code of Conduct
+
+<center>
+
+![](https://media.giphy.com/media/4yfGy8lw0xnCU/giphy.gif)
+
+</center>
+
+Please note that the GomoGomonoMi project is released with a
+[Contributor Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
