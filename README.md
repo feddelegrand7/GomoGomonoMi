@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# GomoGomonoMi
+# GomoGomonoMi <a><img src='man/figures/hex.png' align="right" height="200" /></a>
 
 <!-- badges: start -->
 
