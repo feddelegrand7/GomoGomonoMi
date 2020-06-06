@@ -13,50 +13,48 @@ knitr::opts_chunk$set(
 )
 ```
 
-# coconut
+# GomoGomonoMi
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 
-The coconut packages allows you to animate text in Rmd documents (xaringan slides included) and Shiny apps using the [Animate.css](https://animate.style/) library. 
+The GomoGomonoMi packages allows you to animate text in Rmd documents (xaringan slides included) and Shiny apps using the [Animate.css](https://animate.style/) library. 
 
 
 ## Installation
 
-You can install the development version of coconut from Github with:
+You can install the development version of `GomoGomonoMi` from Github with:
 
 
 ```{r, eval=FALSE}
 
 install.packages("remotes")
 
-remotes::install_github("feddelegrand7/coconut")
+remotes::install_github("feddelegrand7/GomoGomonoMi")
 
 ```
 
 ## How to use it ? 
 
-Put the `use_coco()` function at the beginning of your Rmd document (works also with xaringan slides) or Shiny application (at the UI): 
+Put the `use_gomo()` function at the beginning of your Rmd document or Shiny application (at the UI): 
 
 ```{r}
 
-library(coconut)
+library(GomoGomonoMi)
 
-use_coco()
+use_gomo()
 
 ```
 
-Then you can animate your text using the `coconut()` function. Don't hesitate to use `help("cocunut")` to check out additional arguments.
+Then you can animate your text using the `gomo_gomo_no()` function. Don't hesitate to use `help("gomo_gomo_no")` to check out additional arguments.
 
 > The Github README doesn't allow for animation but it should work on your RMarkdown document or Shiny app. 
 
 
+```{r, eval = T}
 
-
-```{r}
-
-coconut(text = "What comes first: filter or select ?!!!", level = "###", animation = "bounce")
+gomo_gomo_no(text = "Straw hat", level = "#", animation = "bounce")
 
 
 ```
@@ -75,18 +73,18 @@ available_animations()
 
 # Example 
 
-This is an example of a Shiny app that uses `coconut`
+This is an example of a Shiny app that uses `GomoGomonoMi`
 
 
 ```{r, eval=FALSE}
 
 library(shiny)
-library(coconut)
+library(GomoGomonoMi)
 
-ui <- fluidPage(use_coco(), 
+ui <- fluidPage(use_gomo(), 
                 
                 
-  coconut(text = "HELLO SHINY !!!!", level = "#", animation = "backInDown", duration = "slower")
+  gomo_gomo_no(text = "HELLO SHINY !!!!", level = "#", animation = "backInDown", duration = "slower")
             
 
 )

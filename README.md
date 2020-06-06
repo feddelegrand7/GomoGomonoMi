@@ -1,37 +1,38 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# coconut
+# GomoGomonoMi
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The coconut packages allows you to animate text in Rmd documents
+The GomoGomonoMi packages allows you to animate text in Rmd documents
 (xaringan slides included) and Shiny apps using the
 [Animate.css](https://animate.style/) library.
 
 ## Installation
 
-You can install the development version of coconut from Github with:
+You can install the development version of `GomoGomonoMi` from Github
+with:
 
 ``` r
 
 install.packages("remotes")
 
-remotes::install_github("feddelegrand7/coconut")
+remotes::install_github("feddelegrand7/GomoGomonoMi")
 ```
 
 ## How to use it ?
 
-Put the `use_coco()` function at the beginning of your Rmd document
-(works also with xaringan slides) or Shiny application (at the UI):
+Put the `use_gomo()` function at the beginning of your Rmd document or
+Shiny application (at the UI):
 
 ``` r
 
-library(coconut)
+library(GomoGomonoMi)
 
-use_coco()
+use_gomo()
 ```
 
 <!--html_preserve-->
@@ -47,24 +48,25 @@ use_coco()
 
 <!--/html_preserve-->
 
-Then you can animate your text using the `coconut()` function. Don’t
-hesitate to use `help("cocunut")` to check out additional arguments.
+Then you can animate your text using the `gomo_gomo_no()` function.
+Don’t hesitate to use `help("gomo_gomo_no")` to check out additional
+arguments.
 
 > The Github README doesn’t allow for animation but it should work on
 > your RMarkdown document or Shiny app.
 
 ``` r
 
-coconut(text = "What comes first: filter or select ?!!!", level = "###", animation = "bounce")
+gomo_gomo_no(text = "Straw hat", level = "#", animation = "bounce")
 ```
 
 <!--html_preserve-->
 
-<h3 class="animate__animated animate__bounce animate__repeat-1 animate__delay-0s animate__slow">
+<h1 class="animate__animated animate__bounce animate__repeat-1 animate__delay-0s animate__slow">
 
-What comes first: filter or select ?\!\!\!
+Straw hat
 
-</h3>
+</h1>
 
 <!--/html_preserve-->
 
@@ -140,17 +142,17 @@ available_animations()
 
 # Example
 
-This is an example of a Shiny app that uses `coconut`
+This is an example of a Shiny app that uses `GomoGomonoMi`
 
 ``` r
 
 library(shiny)
-library(coconut)
+library(GomoGomonoMi)
 
-ui <- fluidPage(use_coco(), 
+ui <- fluidPage(use_gomo(), 
                 
                 
-  coconut(text = "HELLO SHINY !!!!", level = "#", animation = "backInDown", duration = "slower")
+  gomo_gomo_no(text = "HELLO SHINY !!!!", level = "#", animation = "backInDown", duration = "slower")
             
 
 )

@@ -8,14 +8,14 @@
 #'
 #' # Put the function at the beginning of the document
 #'
-#' use_coco()
+#' use_gomo()
 #'
 #'
 #'
 #' }
 
 
-use_coco <- function(){
+use_gomo <- function(){
 
   htmltools::HTML(glue::glue(
 

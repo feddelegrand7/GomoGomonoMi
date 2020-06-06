@@ -1,11 +1,11 @@
-Package: coconut
+Package: GomoGomonoMi
 Type: Package
 Title: Animate Text using the Animate.css Library
 Version: 0.1.0
 Author: Mohamed El Fodil Ihaddaden
 Maintainer: Mohamed El Fodil Ihaddaden <ihaddaden.fodeil@gmail.com>
-Description: Allows the user to animate text within Rmd documents and Shiny apps. 
-    The animations are activated using the Animate.css library.
+Description: Allows the user to animate text within R Markdown documents and Shiny apps. 
+    The animations are activated using the Animate library.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -13,5 +13,5 @@ Imports:
     htmltools,
     glue
 RoxygenNote: 7.1.0
-URL: https://github.com/feddelegrand7/coconut
-BugReports: https://github.com/feddelegrand7/coconut/issues
+URL: https://github.com/feddelegrand7/GomoGomonoMi
+BugReports: https://github.com/feddelegrand7/GomoGomonoMi/issues

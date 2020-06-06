@@ -14,15 +14,15 @@
 #'
 #' @examples \dontrun{
 #'
-#' # Don't forget to run use_coco before
+#' # Don't forget to run use_gomo() before
 #'
-#' coconut(text = "I Love Chocolate !!!!", level = "###", animation = "tada")
+#' gomo_gomo_no(text = "I Love Chocolate !!!!", level = "###", animation = "tada")
 #'
 #' }
 #'
 #'
 #'
-coconut <- function(text, level = "#", animation = "bounce", repeating = 1, delay = 0, duration = "slow"){
+gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1, delay = 0, duration = "slow"){
 
 
   if(!is.character(text) | !is.character(level) | !is.character(animation) | !is.character(duration)){
