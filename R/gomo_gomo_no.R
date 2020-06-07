@@ -33,7 +33,7 @@ gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1,
   stopifnot(level %in%  c("#", "##", "###", "####", "#####", "######", "text"))
 
 
-  level <- switch(level, "#" = "h1", "##" = "h2", "###" = "h3", "####" = "h4", "#####" = "h5", "######" = "h6","text" = "p")
+  level <- switch(level, "#" = "h1", "##" = "h2", "###" = "h3", "####" = "h4", "#####" = "h5", "######" = "h6","text" = "span")
 
 
 
@@ -43,7 +43,7 @@ gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1,
 
     "
 
-    <{level} style='color:{color}' class='animate__animated animate__{animation} animate__repeat-{repeating} animate__delay-{delay}s animate__{duration}'> {text} </{level}>
+    <{level} style='color:{color}; display:inline-block;' class='animate__animated animate__{animation} animate__repeat-{repeating} animate__delay-{delay}s animate__{duration}'> {text} </{level}>
 
 
     "
