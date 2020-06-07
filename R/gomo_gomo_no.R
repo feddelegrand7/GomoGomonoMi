@@ -38,19 +38,7 @@ gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1,
 
 
 
-  htmltools::HTML(glue::glue(
-
-
-    "
-
-    <{level} style='color:{color}; display:inline-block;' class='animate__animated animate__{animation} animate__repeat-{repeating} animate__delay-{delay}s animate__{duration}'> {text} </{level}>
-
-
-    "
-
-
-
-  ))
+  htmltools::HTML(glue::glue("<{level} style='color:{color}; display:inline-block' class='animate__animated animate__{animation} animate__repeat-{repeating} animate__delay-{delay}s animate__{duration}'>{text}</{level}>"))
 
 
 
