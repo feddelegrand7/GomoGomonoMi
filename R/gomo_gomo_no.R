@@ -22,7 +22,7 @@
 #'
 #'
 #'
-gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1, delay = 0, duration = "slow"){
+gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1, delay = 0, duration = "slow", color = "black"){
 
 
   if(!is.character(text) | !is.character(level) | !is.character(animation) | !is.character(duration)){
@@ -43,7 +43,7 @@ gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1,
 
     "
 
-    <{level} class='animate__animated animate__{animation} animate__repeat-{repeating} animate__delay-{delay}s animate__{duration}'> {text} </{level}>
+    <{level} style='color:{color}' class='animate__animated animate__{animation} animate__repeat-{repeating} animate__delay-{delay}s animate__{duration}'> {text} </{level}>
 
 
     "
