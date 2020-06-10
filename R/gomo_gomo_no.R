@@ -11,7 +11,6 @@
 #' @param color the color of the animated text
 #'
 #' @return animated text
-#' @export
 #'
 #' @examples \donttest{
 #'
@@ -23,7 +22,7 @@
 #' gomo_gomo_no(text = "I Love Chocolate !!!!", level = "###", animation = "tada")
 #'
 #' }
-#'
+#' @export
 #'
 #'
 gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1, delay = 0, duration = "slow", color = "black"){

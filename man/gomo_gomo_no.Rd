@@ -46,7 +46,4 @@ use_gomo()
 gomo_gomo_no(text = "I Love Chocolate !!!!", level = "###", animation = "tada")
 
 }
-
-
-
 }
