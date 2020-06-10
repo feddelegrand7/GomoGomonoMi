@@ -2,7 +2,7 @@
 % Please edit documentation in R/available_animations.R
 \name{available_animations}
 \alias{available_animations}
-\title{Displaying the available animations}
+\title{Displaying the Available Animations}
 \usage{
 available_animations()
 }

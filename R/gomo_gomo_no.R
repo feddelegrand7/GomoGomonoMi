@@ -1,4 +1,4 @@
-#' Generate animated text
+#' Generate Animated Text
 #'
 #' @description The function animates text using the Animate.css library
 #'
@@ -8,13 +8,17 @@
 #' @param repeating Number of times the animation is repeated (from 1 to 3). Default to 1
 #' @param delay Time before triggering the animation (in seconds). Default to 0
 #' @param duration The speed of the animation, available choices are: "slow", "slower", "fast", "faster". Default to "slow"
+#' @param color the color of the animated text
 #'
 #' @return animated text
 #' @export
 #'
-#' @examples \dontrun{
+#' @examples \donttest{
 #'
-#' # Don't forget to run use_gomo() before
+#' # Put use_gomo() at the beginning of your Rmd Document or Shiny App (UI)
+#' use_gomo()
+#'
+#' # Then call gomo_gomo_no() wherever you want to animate your text
 #'
 #' gomo_gomo_no(text = "I Love Chocolate !!!!", level = "###", animation = "tada")
 #'
@@ -25,8 +29,8 @@
 gomo_gomo_no <- function(text, level = "#", animation = "bounce", repeating = 1, delay = 0, duration = "slow", color = "black"){
 
 
-  if(!is.character(text) | !is.character(level) | !is.character(animation) | !is.character(duration)){
-    stop("text, level and animation must be a characer string")
+  if(!is.character(text) | !is.character(level) | !is.character(animation) | !is.character(duration)| !is.character(color)){
+    stop("text, level, animation and color must be a characer string")
   }
 
 

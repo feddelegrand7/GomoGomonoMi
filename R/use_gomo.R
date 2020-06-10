@@ -1,18 +1,28 @@
 
-#' Enable the animate.css library
+#' Enable the Animate.css Library
+#'
 #' @description The function activates the capabilities of the animate.css library using its CDN. It should be run at the beginning of the document.
+#'
 #' @return called for the side effect of activating the animate.css library
-#' @export
 #'
-#' @examples \dontrun{
 #'
-#' # Put the function at the beginning of the document
+#' @examples \donttest{
+#'
+#' # Put the function at the beginning of your Rmd document or Shiny app (UI)
 #'
 #' use_gomo()
 #'
 #'
 #'
 #' }
+#'
+#'
+#' @export
+#'
+#'
+#'
+#'
+
 
 
 use_gomo <- function(){

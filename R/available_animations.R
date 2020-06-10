@@ -1,11 +1,10 @@
 
 
-#' Displaying the available animations
+#' Displaying the Available Animations
 #'
 #' @description The function displays a list of the available animations from the Animate.css library
 #'
 #' @return a list of the available animations by type of animation
-#' @export
 #'
 #' @examples \donttest{
 #'
@@ -13,6 +12,8 @@
 #' available_animations()
 #'
 #' }
+#'
+#' @export
 #'
 available_animations <- function(){
 

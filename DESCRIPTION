@@ -1,11 +1,11 @@
 Package: GomoGomonoMi
 Type: Package
-Title: Animate Text using the Animate.css Library
+Title: Animate Text using the 'Animate.css' Library
 Version: 0.1.0
 Author: Mohamed El Fodil Ihaddaden
 Maintainer: Mohamed El Fodil Ihaddaden <ihaddaden.fodeil@gmail.com>
-Description: Allows the user to animate text within R Markdown documents and Shiny apps. 
-    The animations are activated using the Animate library.
+Description: Allows the user to animate text within 'rmarkdown' documents and 'shiny' applications. 
+    The animations are activated using the 'Animate.css' library. See <https://animate.style/> for more information.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

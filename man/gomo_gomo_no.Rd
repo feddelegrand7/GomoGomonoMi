@@ -2,7 +2,7 @@
 % Please edit documentation in R/gomo_gomo_no.R
 \name{gomo_gomo_no}
 \alias{gomo_gomo_no}
-\title{Generate animated text}
+\title{Generate Animated Text}
 \usage{
 gomo_gomo_no(
   text,
@@ -10,7 +10,8 @@ gomo_gomo_no(
   animation = "bounce",
   repeating = 1,
   delay = 0,
-  duration = "slow"
+  duration = "slow",
+  color = "black"
 )
 }
 \arguments{
@@ -25,6 +26,8 @@ gomo_gomo_no(
 \item{delay}{Time before triggering the animation (in seconds). Default to 0}
 
 \item{duration}{The speed of the animation, available choices are: "slow", "slower", "fast", "faster". Default to "slow"}
+
+\item{color}{the color of the animated text}
 }
 \value{
 animated text
@@ -33,9 +36,12 @@ animated text
 The function animates text using the Animate.css library
 }
 \examples{
-\dontrun{
+\donttest{
 
-# Don't forget to run use_gomo() before
+# Put use_gomo() at the beginning of your Rmd Document or Shiny App (UI)
+use_gomo()
+
+# Then call gomo_gomo_no() wherever you want to animate your text
 
 gomo_gomo_no(text = "I Love Chocolate !!!!", level = "###", animation = "tada")
 
