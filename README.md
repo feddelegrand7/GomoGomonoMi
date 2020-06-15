@@ -145,7 +145,7 @@ available_animations()
 #> [1] "slideOutDown"  "slideOutLeft"  "slideOutRight" "slideOutUp"
 ```
 
-# Example
+# Shiny Examples
 
 This is an example of a Shiny app that uses `GomoGomonoMi`
 
@@ -169,6 +169,48 @@ server <- function(input, output) {
 
 shinyApp(ui = ui, server = server)
 ```
+
+You can also leverage the reactivity in shiny to animate some texts
+using `GomoGomonoMi`:
+
+``` r
+library(shiny)
+library(GomoGomonoMi)
+
+ui <- fluidPage(use_gomo(), 
+    
+    br(),
+    
+    actionButton(inputId = "btn1", label = "click me ! "), 
+    
+    uiOutput(outputId = "txt1")
+   
+)
+
+server <- function(input, output) {
+    
+observeEvent(input$btn1, {
+    
+    
+output$txt1 <- renderUI({
+    
+    
+    gomo_gomo_no(text = "Thank you for clicking me :) !!!", 
+                 level = "#", 
+                 repeating = 3, 
+                 duration = "faste")
+
+    
+})
+    
+})
+
+}
+
+shinyApp(ui = ui, server = server)
+```
+
+![Example of reactivity with GomoGomonoMi](man/figures/gomoexample2.gif)
 
 ## Code of Conduct
 

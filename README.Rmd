@@ -79,8 +79,6 @@ gomo_gomo_no(text = " \"If I give up now, I'm going to regret it\" Monkey D. Luf
 
 
 
-
-
 For a listing of all the available animations provided by the __Animate.css__ library, use the following function: 
 
 
@@ -92,7 +90,7 @@ available_animations()
 ```
 
 
-# Example 
+# Shiny Examples 
 
 This is an example of a Shiny app that uses `GomoGomonoMi`
 
@@ -119,6 +117,54 @@ shinyApp(ui = ui, server = server)
 
 
 ```
+
+You can also leverage the reactivity in shiny to animate some texts using `GomoGomonoMi`: 
+
+```{r eval = F}
+library(shiny)
+library(GomoGomonoMi)
+
+ui <- fluidPage(use_gomo(), 
+    
+    br(),
+    
+    actionButton(inputId = "btn1", label = "click me ! "), 
+    
+    uiOutput(outputId = "txt1")
+   
+)
+
+server <- function(input, output) {
+    
+observeEvent(input$btn1, {
+    
+    
+output$txt1 <- renderUI({
+    
+    
+    gomo_gomo_no(text = "Thank you for clicking me :) !!!", 
+                 level = "#", 
+                 repeating = 3, 
+                 duration = "faste")
+
+    
+})
+    
+})
+
+}
+
+shinyApp(ui = ui, server = server)
+
+```
+
+![Example of reactivity with GomoGomonoMi](man/figures/gomoexample2.gif)
+
+
+
+
+
+
 
 
 
