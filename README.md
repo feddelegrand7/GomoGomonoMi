@@ -33,7 +33,8 @@ remotes::install_github("feddelegrand7/GomoGomonoMi")
 ## How to use it ?
 
 Put the `use_gomo()` function at the beginning of your Rmd document or
-Shiny application (at the UI):
+Shiny application (at the UI). **This function needs to be run only
+once** :
 
 ``` r
 
