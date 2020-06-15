@@ -59,23 +59,20 @@ Then you can animate your text using the `gomo_gomo_no()` function.
 Don’t hesitate to use `help("gomo_gomo_no")` to check out additional
 arguments.
 
-> The Github README doesn’t allow for animation but it should work on
-> your RMarkdown document or Shiny app.
-
 ``` r
+library(GomoGomonoMi)
 
-gomo_gomo_no(text = "Straw hat", level = "#", animation = "bounce")
+use_gomo()
+
+gomo_gomo_no(text = " \"If I give up now, I'm going to regret it\" Monkey D. Luffy", 
+             level = "##", 
+             animation = "zoomIn", 
+             duration = "slower", 
+             delay = 2, 
+             color = "darkred")
 ```
 
-<!--html_preserve-->
-
-<h1 class="animate__animated animate__bounce animate__repeat-1 animate__delay-0s animate__slow">
-
-Straw hat
-
-</h1>
-
-<!--/html_preserve-->
+![A demo of the gomo\_gomo\_no() function](man/figures/gomoexample.gif)
 
 For a listing of all the available animations provided by the
 **Animate.css** library, use the following function:

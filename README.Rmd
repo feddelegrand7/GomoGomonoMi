@@ -58,15 +58,27 @@ use_gomo()
 
 Then you can animate your text using the `gomo_gomo_no()` function. Don't hesitate to use `help("gomo_gomo_no")` to check out additional arguments.
 
-> The Github README doesn't allow for animation but it should work on your RMarkdown document or Shiny app. 
 
 
-```{r, eval = T}
+```{r, eval=FALSE}
+library(GomoGomonoMi)
 
-gomo_gomo_no(text = "Straw hat", level = "#", animation = "bounce")
+use_gomo()
 
+gomo_gomo_no(text = " \"If I give up now, I'm going to regret it\" Monkey D. Luffy", 
+             level = "##", 
+             animation = "zoomIn", 
+             duration = "slower", 
+             delay = 2, 
+             color = "darkred")
 
 ```
+
+
+![A demo of the gomo_gomo_no() function](man/figures/gomoexample.gif)
+
+
+
 
 
 For a listing of all the available animations provided by the __Animate.css__ library, use the following function: 
