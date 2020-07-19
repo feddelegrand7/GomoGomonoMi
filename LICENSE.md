@@ -1,3 +1,8 @@
+GomoGomonoMi is distributed under MIT License. 
+
+GomoGomonoMi is relies on the animate.css library which is also distributed under MIT. 
+
+
 # MIT License
 
 Copyright (c) 2020 Mohamed El Fodil Ihaddaden
