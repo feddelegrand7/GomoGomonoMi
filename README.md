@@ -6,23 +6,16 @@
 <!-- badges: start -->
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![CRAN\_time\_from\_release](https://www.r-pkg.org/badges/ago/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![metacran
 downloads](https://cranlogs.r-pkg.org/badges/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![metacran
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit/)
-
 [![Travis build
 status](https://travis-ci.com/feddelegrand7/GomoGomonoMi.svg?branch=master)](https://travis-ci.com/feddelegrand7/GomoGomonoMi)
-
 [![R
 badge](https://img.shields.io/badge/Build%20with-♥%20and%20R-pink)](https://github.com/feddelegrand7/GomoGomonoMi)
-
 <!-- badges: end -->
 
 The GomoGomonoMi packages allows you to animate text in Rmd documents
