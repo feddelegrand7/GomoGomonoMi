@@ -12,10 +12,11 @@ downloads](https://cranlogs.r-pkg.org/badges/GomoGomonoMi)](https://cran.r-proje
 [![metacran
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit/)
-[![Travis build
-status](https://travis-ci.com/feddelegrand7/GomoGomonoMi.svg?branch=master)](https://travis-ci.com/feddelegrand7/GomoGomonoMi)
+[![R build
+status](https://github.com/feddelegrand7/GomoGomonoMi/workflows/R-CMD-check/badge.svg)](https://github.com/feddelegrand7/GomoGomonoMi/actions)
 [![R
 badge](https://img.shields.io/badge/Build%20with-♥%20and%20R-pink)](https://github.com/feddelegrand7/GomoGomonoMi)
+
 <!-- badges: end -->
 
 The GomoGomonoMi packages allows you to animate text in Rmd documents
@@ -30,7 +31,6 @@ Animate.css](https://media.giphy.com/media/Uk2SWbNXWDnVe/giphy.gif)
 You can install the `GomoGomonoMi` package from CRAN with:
 
 ``` r
-
 install.packages("GomoGomonoMi")
 ```
 
@@ -38,7 +38,6 @@ You can install the development version of `GomoGomonoMi` from Github
 with:
 
 ``` r
-
 install.packages("remotes")
 
 remotes::install_github("feddelegrand7/GomoGomonoMi")
@@ -51,14 +50,13 @@ Shiny application (at the UI). **This function needs to be run only
 once** :
 
 ``` r
-
 library(GomoGomonoMi)
+#> Warning: package 'GomoGomonoMi' was built under R version 4.0.3
 
 use_gomo()
 ```
 
 <!--html_preserve-->
-
 <head>
 
 <link
@@ -67,7 +65,6 @@ use_gomo()
 />
 
 </head>
-
 <!--/html_preserve-->
 
 Then you can animate your text using the `gomo_gomo_no()` function.
@@ -93,7 +90,6 @@ For a listing of all the available animations provided by the
 **Animate.css** library, use the following function:
 
 ``` r
-
 available_animations()
 #> $attention_seekers
 #>  [1] "bounce"     "flash"      "pulse"      "rubberBand" "shakeX"    
@@ -164,7 +160,6 @@ available_animations()
 This is an example of a Shiny app that uses `GomoGomonoMi`
 
 ``` r
-
 library(shiny)
 library(GomoGomonoMi)
 
@@ -229,9 +224,7 @@ shinyApp(ui = ui, server = server)
 ## Code of Conduct
 
 <center>
-
 ![](https://media.giphy.com/media/4yfGy8lw0xnCU/giphy.gif)
-
 </center>
 
 Please note that the GomoGomonoMi project is released with a

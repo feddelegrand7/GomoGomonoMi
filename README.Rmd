@@ -18,16 +18,11 @@ knitr::opts_chunk$set(
 <!-- badges: start -->  
 
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![CRAN_time_from_release](https://www.r-pkg.org/badges/ago/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![metacran downloads](https://cranlogs.r-pkg.org/badges/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![metacran downloads](https://cranlogs.r-pkg.org/badges/grand-total/GomoGomonoMi)](https://cran.r-project.org/package=GomoGomonoMi)
-
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit/)
-
-
+[![R build status](https://github.com/feddelegrand7/GomoGomonoMi/workflows/R-CMD-check/badge.svg)](https://github.com/feddelegrand7/GomoGomonoMi/actions)
 [![R badge](https://img.shields.io/badge/Build%20with-♥%20and%20R-pink)](https://github.com/feddelegrand7/GomoGomonoMi)
 
 <!-- badges: end -->
