@@ -28,8 +28,6 @@ knitr::opts_chunk$set(
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit/)
 
 
-[![Travis build status](https://travis-ci.com/feddelegrand7/GomoGomonoMi.svg?branch=master)](https://travis-ci.com/feddelegrand7/GomoGomonoMi)
-
 [![R badge](https://img.shields.io/badge/Build%20with-♥%20and%20R-pink)](https://github.com/feddelegrand7/GomoGomonoMi)
 
 <!-- badges: end -->
